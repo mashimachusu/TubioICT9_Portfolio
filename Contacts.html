@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="website_cssstylesheet.css">
+	<title>Contact Form</title>
+	<style>
+        body {
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 80px;
+    background-color: #333;
+    color: hsl(0, 0%, 100%);
+}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+            justify-content: center;
+		}
+		th, td {
+			padding: 10px;
+			border: 1px burlywood;
+
+		}
+		th {
+			background-color: burlywood;
+            border-radius: 5px;
+		}
+		input[type="submit"] {
+			background-color: palevioletred;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: plum;
+		}
+
+
+        .creator-header {
+  display: flex;
+  align-items: center; /* Vertically align the header content */
+  justify-content: space-between; /* Horizontally align the header content */
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.creator-nav {
+  display: flex;
+  flex-direction: column; /* Stack the buttons vertically */
+  align-items: flex-start; /* Place the buttons at the left side */
+}
+
+.creator-link {
+  margin: 20px;
+  padding: 20px;
+  background-color: #555;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 40px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:300px;
+}
+
+.creator-link:hover {
+  background-color: #777;
+}
+
+	</style>
+</head>
+<body>
+    <header class="creator-header">
+        <nav class="creator-nav">
+            <a href="Website_Final.html" class="creator-link">Home</a>
+            <a href="About.html" class="creator-link">About</a>
+            <a href="Contacts.html" class="creator-link">Contacts</a>
+        </nav>
+	<form id="contactForm">
+		<table>
+			<tr>
+				<th>Name:</th>
+				<td><input type="text" id="name" required></td>
+			</tr>
+			<tr>
+				<th>Email:</th>
+				<td><input type="email" id="email" required></td>
+			</tr>
+			<tr>
+				<th>Phone:</th>
+				<td><input type="tel" id="phone" required></td>
+			</tr>
+			<tr>
+				<th>Message:</th>
+				<td><textarea id="message" required></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="Submit"></td>
+			</tr>
+		</table>
+	</form>
+    <script src="jscontacts.js"></script>
+    </body>
+	
